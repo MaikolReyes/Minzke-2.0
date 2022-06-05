@@ -112,8 +112,8 @@
 
 /* comienzo de pagina "nosotros" */
 .img-nosotros {
-    height: 420px;
-    width: 550px;
+    height: 400px;
+    width: 600px;
     box-shadow: 10px 10px 15px rgb(169, 169, 169);
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -188,6 +188,10 @@
     text-align: center;
 }
 
+.carousel-item{
+height: 600px;
+padding-bottom: 20px;
+}
 /* solo footer con las redes */
 .footer-container {
     background-color: #d3d3d3;
