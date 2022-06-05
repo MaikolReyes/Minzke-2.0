@@ -85,7 +85,6 @@
     grid-template-rows: repeat(3, 1fr);
     text-align: center;
     gap: 40px;
-    grid-area: "img-producto";
 }
 
 .texto-producto {
@@ -116,10 +115,6 @@
     width: 600px;
     box-shadow: 10px 10px 15px rgb(169, 169, 169);
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .img-nosotros:hover {
@@ -138,10 +133,6 @@
     background: rgb(232, 232, 232);
     border: solid 5px #FF8E00;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .parrafo-nosotros {
