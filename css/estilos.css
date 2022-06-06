@@ -193,6 +193,7 @@ padding-bottom: 20px;
     text-align: center;
     gap: 40px;
 }
+
 /* solo footer con las redes */
 .footer-container {
     background-color: #d3d3d3;
@@ -247,6 +248,11 @@ padding-bottom: 20px;
     }
 
     .all-products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .productos-categorias{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
