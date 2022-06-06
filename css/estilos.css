@@ -183,6 +183,16 @@
 height: 600px;
 padding-bottom: 20px;
 }
+/* fin de pagina accesorios */
+
+/* pagina de categorias */
+.productos-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    gap: 40px;
+}
 /* solo footer con las redes */
 .footer-container {
     background-color: #d3d3d3;
