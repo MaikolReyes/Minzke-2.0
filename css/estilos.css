@@ -180,7 +180,6 @@
 }
 
 .carousel-item{
-height: 600px;
 padding-bottom: 20px;
 }
 /* fin de pagina accesorios */
@@ -254,7 +253,7 @@ padding-bottom: 20px;
 
     .productos-categorias{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .banner-nosotros{
@@ -266,6 +265,12 @@ padding-bottom: 20px;
 
 .img-nosotros{
     width: 100%;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 }
