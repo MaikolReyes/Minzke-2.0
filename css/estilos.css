@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* contenido del header */
+/* contenido del header  con sass aplicado*/
 header .logo {
     width: 120px;
     height: 120px;
@@ -33,6 +33,8 @@ header .navbar .navbar-menu .navbar-menu-item:hover {
     color: white;
 }
 
+/* fin del header */
+
 .titulo {
     text-align: center;
     padding-top: 20px;
@@ -41,8 +43,6 @@ header .navbar .navbar-menu .navbar-menu-item:hover {
     font-family: 'Roboto', sans-serif;
     background-color: #FF8E00;
 }
-
-/* fin del header */
 
 /* comienzo de productos destacados */
 .productos-destacados {
