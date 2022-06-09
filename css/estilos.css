@@ -5,31 +5,31 @@
 }
 
 /* contenido del header */
-.logo {
+header .logo {
     width: 120px;
     height: 120px;
 }
 
-.navbar {
+header .navbar {
     background-color: #FF8E00;
     justify-content: space-between;
 }
 
-.navbar-menu {
+header .navbar .navbar-menu {
     display: flex;
     list-style-type: none;
     gap: 4rem;
     padding-top: 10px;
 }
 
-.navbar-menu-item {
+header .navbar .navbar-menu .navbar-menu-item {
     text-decoration: none;
     font-size: 23px;
     color: black;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar-menu-item:hover {
+header .navbar .navbar-menu .navbar-menu-item:hover {
     color: white;
 }
 
@@ -179,9 +179,10 @@
     text-align: center;
 }
 
-.carousel-item{
-padding-bottom: 20px;
+.carousel-item {
+    padding-bottom: 20px;
 }
+
 /* fin de pagina accesorios */
 
 /* pagina de categorias */
@@ -251,27 +252,27 @@ padding-bottom: 20px;
         grid-template-columns: 1fr 1fr;
     }
 
-    .productos-categorias{
+    .productos-categorias {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .banner-nosotros{
+    .banner-nosotros {
         display: flex;
         flex-direction: column;
         width: 100%;
         gap: 30px;
     }
 
-.img-nosotros{
-    width: 100%;
-}
+    .img-nosotros {
+        width: 100%;
+    }
 
-.buscador{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
+    .buscador {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
 
 }
 
