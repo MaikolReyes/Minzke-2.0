@@ -56,16 +56,16 @@ header .navbar .navbar-menu .navbar-menu-item:hover {
     text-decoration: none;
 }
 
-.img-producto-destacado {
+.productos-destacados .img-producto-destacado {
     width: 250px;
     height: 250px;
     justify-content: space-around;
-    background-color: rgb(216, 216, 216);
+    background-color: #d8d8d8;
     border-radius: 30px;
-    box-shadow: 10px 10px 15px rgb(169, 169, 169);
+    box-shadow: 10px 10px 15px darkgray;
 }
 
-.img-producto-destacado:hover {
+.productos-destacados .img-producto-destacado:hover {
     background-color: #f4a856;
     border: solid white 4px;
 }
@@ -87,21 +87,21 @@ header .navbar .navbar-menu .navbar-menu-item:hover {
     gap: 40px;
 }
 
-.texto-producto {
+.all-products .texto-producto {
     text-decoration: none;
 }
 
-.img-producto {
+.all-products .img-producto {
     width: 250px;
     height: 250px;
     justify-content: space-between;
-    background-color: rgb(216, 216, 216);
+    background-color: #d8d8d8;
     border-radius: 30px;
-    box-shadow: 10px 10px 15px rgb(169, 169, 169);
+    box-shadow: 10px 10px 15px darkgray;
     opacity: 0.9;
 }
 
-.img-producto:hover {
+.all-products .img-producto:hover {
     background-color: #f4a856;
     border: solid white 4px;
     opacity: 1;
