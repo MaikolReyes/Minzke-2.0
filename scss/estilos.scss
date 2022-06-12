@@ -1,14 +1,14 @@
-@import "categorias";
-@import "accesorios";
-@import "contacto";
-@import "nosotros";
-
 $bg-titulos: #FF8E00;
 $text: 25px;
 $logoh: 120px;
 $logow: 120px;
 $bg-productos:#f4a856;
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 header {
     .logo {
@@ -23,6 +23,7 @@ header {
             list-style-type: none;
             gap: 4rem;
             padding-top: 10px;
+            }
             .navbar-menu-item {
                 text-decoration: none;
                 font-size: $text;
@@ -30,7 +31,7 @@ header {
                 font-family: 'Ubuntu', sans-serif;
                 &:hover {
                     color: white;
-                }
+                
             }
         }
     }
@@ -40,9 +41,17 @@ header {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 25px;
+    font-size: $text;
     font-family: 'Roboto', sans-serif;
     background-color: $bg-titulos;
+}
+
+.productos-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    gap: 40px;
 }
 
 .productos-destacados {
@@ -50,11 +59,9 @@ header {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     text-decoration: none;
-
     div a {
         text-decoration: none;
     }
-
     .img-producto-destacado {
         width: 250px;
         height: 250px;
@@ -62,7 +69,6 @@ header {
         background-color: rgb(216, 216, 216);
         border-radius: 30px;
         box-shadow: 10px 10px 15px rgb(169, 169, 169);
-
         &:hover{
             background-color:$bg-productos ;
             border: solid white 4px;
@@ -82,6 +88,7 @@ header {
     grid-template-rows: repeat(3, 1fr);
     text-align: center;
     gap: 40px;
+}
 
 .texto-producto {
     text-decoration: none;
@@ -95,11 +102,97 @@ header {
     border-radius: 30px;
     box-shadow: 10px 10px 15px rgb(169, 169, 169);
     opacity: 0.9;
-
     &:hover {
-    background-color: #f4a856;
-    border: solid white 4px;
-    opacity: 1;
+        background-color: #f4a856;
+        border: solid white 4px;
+        opacity: 1;
+    }
+}
+
+.img-nosotros {
+    height: 400px;
+    width: 600px;
+    box-shadow: 10px 10px 15px rgb(169, 169, 169);
+    border-radius: 20px;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.texto {
+    width: 80%;
+    background: rgb(232, 232, 232);
+    border: solid 5px #FF8E00;
+    border-radius: 20px;
+    .titulo-nosotros {
+        font-size: 35px;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+}
+        .parrafo-nosotros {
+            font-family: 'roboto', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            width: 60%;
+}
+            .valores {
+                font-size: 20px;
+                padding-top: 30px;
+                text-align: center;
+                list-style-type: none;
+                padding-right: 35px;
+            }
+        }
+
+        .subtitulo {
+            text-align: center;
+        }
+
+        .carousel-item {
+            padding-bottom: 20px;
+            width: 100%;
+            height: 60%;
+        }
+
+        .formulario {
+            text-align: center;
+            font-size: 20px;
+            font-family: 'roboto, sans-serif';
+            background: rgb(232, 232, 232);
+            border: solid 5px #FF8E00;
+        }
+        
+        .texto-formulario {
+            text-align: center;
+            font-family: 'ubuntu, sans-serif';
+        }
+        
+        .parrafo-formulario {
+            text-align: center;
+            font-family: 'roboto, sans-serif';
+            font-size: 20px;
+        }
+
+.footer-container {
+    background-color: #d3d3d3;
+    background-image: linear-gradient(315deg, #d3d3d3 0%, #7f8c8d 74%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+.pie {
+    font-size: 25px;
+    text-decoration: none;
+    justify-content: space-around;
+    padding-bottom: 30px;
+.redes {
+    width: 40px;
+    height: 40px;
+
 }
 }
+}
+
+.creditos {
+    font-size: 15px;
+    text-align: center;
 }

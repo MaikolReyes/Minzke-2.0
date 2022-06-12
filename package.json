@@ -1,11 +1,10 @@
 {
   "name": "minzke.ar",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -21,5 +20,7 @@
   "dependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
