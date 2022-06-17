@@ -1,0 +1,39 @@
+.img-nosotros {
+    height: 400px;
+    width: 600px;
+    box-shadow: $shadow;
+    border-radius: 20px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.texto {
+    width: 80%;
+    background: rgb(232, 232, 232);
+    border: solid 5px $bg-titulos;
+    border-radius: 20px;
+
+    .titulo-nosotros {
+        font-size: $text;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+    .parrafo-nosotros {
+        font-family: 'roboto', sans-serif;
+        font-size: $text-second;
+        text-align: center;
+        width: 60%;
+    }
+
+    .valores {
+        font-size: $text-second;
+        padding-top: 30px;
+        text-align: center;
+        list-style-type: none;
+        padding-right: 35px;
+    }
+}

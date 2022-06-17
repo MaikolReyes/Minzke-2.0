@@ -1,0 +1,29 @@
+.footer-container {
+    background-color: #191919;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .pie {
+        font-size: $text;
+        text-decoration: none;
+        justify-content: space-around;
+        padding-bottom: 30px;
+        color: hsl(0, 0%, 100%);
+
+        .redes {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.texto-footer {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+.creditos {
+    font-size: $text-second;
+    text-align: center;
+    color: #d3d3d3;
+}

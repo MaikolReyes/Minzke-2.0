@@ -1,4 +1,5 @@
-@mixin borde ($color, $ancho) {
-    border: $color solid $ancho;
-    
+@mixin productos-position {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
 }

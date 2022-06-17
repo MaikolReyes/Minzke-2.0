@@ -1,0 +1,25 @@
+header {
+    .logo {
+        width: $logow;
+        height: $logoh;
+    }
+    .navbar {
+        background-color: $bg-titulos;
+        justify-content: space-between;
+        .navbar-menu {
+            display: flex;
+            list-style-type: none;
+            gap: 4rem;
+            padding-top: 10px;
+        }
+        .navbar-menu-item {
+            text-decoration: none;
+            font-size: $text;
+            font-family: 'Ubuntu', sans-serif;
+            color: black;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
