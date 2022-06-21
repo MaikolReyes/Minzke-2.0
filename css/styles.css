@@ -149,7 +149,7 @@ header .navbar {
   grid-template-columns: 2fr 1fr; }
 
 .contact-wrapper > * {
-  padding: 1em; }
+  padding: 3em; }
 
 .contact-form {
   background-color: #222222;
