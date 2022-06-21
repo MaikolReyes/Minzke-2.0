@@ -236,7 +236,9 @@ header .navbar {
     width: 100%;
     gap: 30px; }
   .texto {
-    width: 100vw; } }
+    width: 100vw; }
+  .contact-wrapper {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
   .productos-destacados {
@@ -261,5 +263,4 @@ header .navbar {
     display: flex;
     justify-content: space-around; }
   .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr, 1fr; } }
+    grid-template-columns: 1fr; } }

@@ -84,8 +84,6 @@
     }
 }
 
-
-
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
     display: grid;
@@ -213,6 +211,10 @@
     .texto {
         width: 100vw;
     }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -251,7 +253,6 @@
     }
 
     .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr, 1fr;
+        grid-template-columns: 1fr;
     }
 }
