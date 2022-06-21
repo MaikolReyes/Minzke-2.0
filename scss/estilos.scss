@@ -150,7 +150,7 @@
 .contact-info .ul,
 .contact-info .p {
     text-align: center;
-    margin: 0 0 1rem 0;
+
 }
 
 .contact-info ul {
@@ -252,7 +252,17 @@
         justify-content: space-around;
     }
 
+    .texto-footer {
+        justify-content: center;
+        font-size: 15px;
+    }
+
     .contact-wrapper {
         grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 0;
+        width: 100%;
     }
 }
