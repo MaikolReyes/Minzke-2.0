@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aplicando SEO  -->
+    <meta name="description" content="ecommerce de herramientas electricas y manuales, tanto de uso domestico como de uso profesional para la construccion, Somos Minzke">
+    <meta name="keywords" content="herramientas,amoladoras,taladros,sierras,soldadoras,lijadora de banda,ecommerce de herramientas">
+    <!-- SEO -->
     <link rel="shortcut icon" href="./img/minzke_logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Minzke.Ar</title>
+    <title>Minzke</title>
 </head>
 
 
@@ -24,7 +28,7 @@
         <a class="d-flex justify-content-center bg-light" href="./index.html">
             <img class="logo" src="./img/minzke_logo.png" alt="Logo de la marca" />
         </a>
-        <nav class="navbar">
+        <nav class="navbar">     
             <ul class="navbar-menu">
                 <li><a class="navbar-menu-item" href="#">Inicio</a></li>
                 <li><a class="navbar-menu-item" href="./pages/categorias.html">Categorias</a></li>
@@ -34,13 +38,15 @@
             </ul>
             <form class="buscador d-flex mx-5" role="search">
                 <input class="form-control" type="search" placeholder="Buscar Producto" aria-label="Search">
-                <button class="btn btn-dark" type="submit">Buscar</button>
+                <button class="buscar-buttom btn btn-dark" type="submit">Buscar</button>
             </form>
         </nav>
     </header>
 
+
+
     <main>
-        <video autoplay loop src="./video/pexels-tima-miroshnichenko-6789900.mp4" class="w-100">
+        <video autoplay loop src="./video/video-presentacion.mp4" class="w-100">
         </video>
 
         <!-- solo productos destacdos -->
@@ -48,8 +54,8 @@
             <h2>Productos Destacados</h2>
         </section>
         <div class="productos-destacados">
-            <div class="producto">
-                <a class="decoration" href="#"><img class="img-producto-destacado" src="./img/soldadora.png"
+            <div>
+                <a href="#"><img class="img-producto-destacado" src="./img/soldadora.png"
                         alt="Soldadora con mascara" />
                     <h5 class="productos-nombres mt-3 text-dark">
                         Soldadora Lusqtoff <br />
@@ -95,11 +101,6 @@
         <section class="titulo mt-5">
             <h2>Herramientas</h2>
         </section>
-
-        <div class="banner d-flex">
-            <img src="./img/pexel2.jpg" alt="herramientas manuales" class="banner-img" />
-            <img src="./img/pexel3.jpg" alt="amoladora" class="banner-img">
-        </div>
 
         <div class="all-products mt-5">
             <div>
@@ -283,16 +284,16 @@
 
     <footer class="footer-container mt-5">
         <div class="pie d-flex mt-5">
-            <a class="texto-footer" href="#">
-                <img class="redes" src="./img/instagramicon.png" alt="Instagram" />
-                Instagram</a>
-            <a class="texto-footer" href="#">
-                <img class="redes" src="./img/tiwtter.png" alt="twitter" />Twitter</a>
-            <a class="texto-footer" href="#">
-                <img class="redes" src="./img/whatsapp.png" alt="whatsapp" />Whatsapp
-            </a>
+            <a class="texto-footer" target="_blank" href="https://www.instagram.com/">
+                <img class="redes"  src="./img/instagram.png" alt="Instagram"/>Instagram</a>
+            <a class="texto-footer" target="_blank" href="https://twitter.com/home">
+                <img class="redes" src="./img/twitter.png" alt="twitter"/>Twitter</a>
+            <a class="texto-footer" target="_blank" href="https://www.facebook.com/">
+                <img class="redes" src="./img/facebook.png" alt="facebook"/>Facebook </a>
         </div>
-        <h3 class="creditos">Pagina realizada por Maikol Reyes</h3>
+<section>
+        <h3 class="creditos">Copyright ©2022 Todos los derechos reservados por Maikol Reyes</h3>
+</section>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

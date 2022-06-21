@@ -4,38 +4,19 @@
 @import "../scss/abstracts/extend";
 /* bases */
 @import "../scss/bases/reset";
-@import "../scss/bases/querys";
 /* layout */
 @import "../scss/layout/header";
 @import "../scss/layout/footer";
 /* pages */
 @import "../scss/pages/nosotros";
 
-.titulo {
-    @extend %titulos;
-}
 
-.all-products {
+/* selectores generales */
+.productos-destacados {
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    text-align: center;
-    gap: 40px;
-}
 
-.carousel-item {
-    background-size: cover;
-}
-
-
-.productos-categorias {
-@include productos-position();
-    gap: 40px;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.productos-destacados {
-@include productos-position();
     div a {
         text-decoration: none;
     }
@@ -49,16 +30,6 @@
     }
 }
 
-.banner-img {
-    height: 500px;
-    width: 100%;
-    box-shadow: $shadow;
-}
-
-.texto-producto {
-    text-decoration: none;
-}
-
 .img-producto {
     @extend %cards;
 
@@ -67,27 +38,220 @@
     }
 }
 
+.titulo {
+    @extend %titulos;
+}
+
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    gap: 40px;
+}
+
+.productos-categorias {
+    text-align: center;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+.texto-producto {
+    text-decoration: none;
+}
+
 .subtitulo {
     text-align: center;
 }
 
+/* fin de selectores generales */
 
-
-.formulario {
-    text-align: center;
-    font-size: $text-second;
-    font-family: 'roboto, sans-serif';
-    background: rgb(232, 232, 232);
-    border: solid 5px $bg-titulos;
+.form-contact {
+    color: white;
 }
 
-.texto-formulario {
-    text-align: center;
-    font-family: 'ubuntu, sans-serif';
+.content {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+
+    .logo1 {
+        width: $logow;
+        height: $logoh;
+    }
 }
 
-.parrafo-formulario {
+
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.contact-wrapper>* {
+    padding: 1em;
+}
+
+.contact-form {
+    background-color: #222222;
+    font-family: 'roboto', sans-serif;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid $bg-titulos;
+    color: #fff;
+}
+
+.contact-form form button {
+    background: $bg-titulos;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: $bg-productos;
+    color: #fff;
+    outline: none;
+    transition: background-color 1s ease-out;
+}
+
+.contact-info {
+    background-color: #000;
     text-align: center;
-    font-family: 'roboto, sans-serif';
-    font-size: $text-second;
+
+}
+
+.contact-info .h4,
+.contact-info .ul,
+.contact-info .p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info .ul .li {
+    padding: .3em;
+}
+
+
+/* medias queries */
+@media screen and (max-width: 1200px) {
+
+    .navbar {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-control {
+        display: none;
+    }
+
+    .buscar-buttom {
+        display: none;
+    }
+
+    .productos-destacados {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .all-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productos-categorias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .texto {
+        width: 100vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .productos-destacados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productos-categorias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .img-nosotros {
+        width: 70vw;
+        height: 50vw;
+    }
+
+    .pie {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr, 1fr;
+    }
 }
