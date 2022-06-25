@@ -16,7 +16,6 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 25px;
   font-family: 'Roboto', sans-serif;
   background-color: #FF8E00; }
 
@@ -34,18 +33,20 @@ header .logo {
 header .navbar {
   background-color: #FF8E00;
   justify-content: space-between; }
-  header .navbar .navbar-menu {
-    display: flex;
-    list-style-type: none;
-    gap: 4rem;
-    padding-top: 10px; }
-  header .navbar .navbar-menu-item {
-    text-decoration: none;
-    font-size: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    color: black; }
-    header .navbar .navbar-menu-item:hover {
-      color: white; }
+
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+  padding-top: 10px; }
+
+.navbar-menu-item {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  color: black; }
+  .navbar-menu-item:hover {
+    color: white; }
 
 .footer-container {
   background-color: #191919;
@@ -109,6 +110,9 @@ header .navbar {
   grid-template-columns: repeat(4, 1fr); }
   .productos-destacados div a {
     text-decoration: none; }
+
+.titulo {
+  font-size: 25px; }
 
 .all-products {
   display: grid;
@@ -249,6 +253,12 @@ header .navbar {
   .productos-categorias {
     display: flex;
     flex-direction: column; }
+  .navbar-menu-item {
+    font-size: 15px; }
+  .navbar-menu {
+    gap: 1rem; }
+  .titulo .h2 {
+    font-size: 5px; }
   .banner-nosotros {
     display: flex;
     flex-direction: column;

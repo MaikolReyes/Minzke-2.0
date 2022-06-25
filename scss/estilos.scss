@@ -40,6 +40,7 @@
 
 .titulo {
     @extend %titulos;
+    font-size: $text;
 }
 
 .all-products {
@@ -162,7 +163,6 @@
     padding: .3em;
 }
 
-
 /* medias queries */
 @media screen and (max-width: 1200px) {
 
@@ -232,6 +232,18 @@
     .productos-categorias {
         display: flex;
         flex-direction: column;
+    }
+
+    .navbar-menu-item{
+        font-size: 15px;
+    }
+
+    .navbar-menu{
+        gap: 1rem;
+    }
+
+    .titulo .h2 {
+        font-size: 5px;
     }
 
     .banner-nosotros {

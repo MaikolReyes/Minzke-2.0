@@ -1,0 +1,14 @@
+En los archivos de mi pagina web sumé el SEO con las siguientes características:
+
+
+Descripción: mediante la etiqueta meta name description, 
+agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:
+"ecommerce de herramientas electricas y manuales, tanto de uso domestico como de uso
+ profesional para la construccion, Somos Minzke".
+
+
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a
+a las páginas de index, accesorios y categorias de mi sitio:"herramientas,amoladoras,taladros,sierras,soldadoras,
+lijadora de banda,ecommerce de herramientas".
+
+title:para cada pagina de mi sitio web agregue un title distintivo y personalizado para cada una de las secciones.
