@@ -72,23 +72,7 @@
 /* medias queries */
 @media screen and (max-width: 1200px) {
 
-    .navbar {
-        display: block;
-    }
 
-    .navbar-menu {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .form-control {
-        display: none;
-    }
-
-    .buscar-buttom {
-        display: none;
-    }
 
     .productos-destacados {
         display: grid;
@@ -125,6 +109,7 @@
 
 
 @media screen and (max-width: 768px) {
+    
     .productos-destacados {
         display: flex;
         flex-direction: column;

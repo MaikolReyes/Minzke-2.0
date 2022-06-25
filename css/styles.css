@@ -16,7 +16,7 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'ubuntu', sans-serif;
   background-color: #FF8E00; }
 
 /* bases */
@@ -26,26 +26,19 @@
   box-sizing: border-box; }
 
 /* layout */
-header .logo {
+.logo {
   width: 130px;
   height: 130px; }
 
-header .navbar {
-  background-color: #FF8E00;
-  justify-content: space-between; }
+.navbar {
+  background-color: #FF8E00; }
 
-.navbar-menu {
-  display: flex;
-  list-style-type: none;
-  gap: 4rem;
-  padding-top: 10px; }
-
-.navbar-menu-item {
-  text-decoration: none;
-  font-size: 25px;
-  font-family: 'Ubuntu', sans-serif;
-  color: black; }
-  .navbar-menu-item:hover {
+.nav-link {
+  font-size: 1.5rem;
+  font-family: 'roboto', sans-serif;
+  color: black;
+  margin-left: 2rem; }
+  .nav-link:hover {
     color: white; }
 
 .footer-container {
@@ -54,7 +47,7 @@ header .navbar {
   padding-bottom: 10px; }
   .footer-container .pie {
     justify-content: space-around;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #ffffff; }
     .footer-container .pie .texto-footer {
       text-decoration: none;
@@ -67,7 +60,7 @@ header .navbar {
         margin-right: 8px; }
 
 .creditos {
-  font-size: 20px;
+  font-size: 1rem;
   text-align: center;
   color: #d3d3d3;
   margin-top: 40px; }
@@ -87,17 +80,17 @@ header .navbar {
   border: solid 5px #FF8E00;
   border-radius: 20px; }
   .texto .titulo-nosotros {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-align: center; }
   .texto .parrafo-nosotros {
     font-family: 'roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     width: 70%; }
   .texto .valores {
-    font-size: 20px;
+    font-size: 1rem;
     padding-top: 30px;
     text-align: center;
     list-style-type: none;
@@ -178,7 +171,7 @@ header .navbar {
     text-decoration: none; }
 
 .titulo {
-  font-size: 25px; }
+  font-size: 1.5rem; }
 
 .all-products {
   display: grid;
@@ -202,16 +195,6 @@ header .navbar {
 /* fin de selectores generales */
 /* medias queries */
 @media screen and (max-width: 1200px) {
-  .navbar {
-    display: block; }
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .form-control {
-    display: none; }
-  .buscar-buttom {
-    display: none; }
   .productos-destacados {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
