@@ -1,22 +1,16 @@
 %cards {
-    width: $producto-w;
-    height: $producto-h;
-    background-color: rgb(216, 216, 216);
-    border-radius: 30px;
+    height: 450px;
+    width: 19rem;
+    border-radius: 20px;
     box-shadow: $shadow;
-    opacity: 0.9;
-}
-
-%borde-bg {
-    border: white solid 3px;
-    background-color: $bg-productos;
-    opacity: 1;
 }
 
 %titulos {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: 'ubuntu', sans-serif;
+    font-size: 2rem;
+    font-family: 'rubik', sans-serif;
+    color: black;
     background-color: $bg-titulos;
 }

@@ -14,42 +14,58 @@
 
 /* selectores generales */
 .productos-destacados {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-around;
+}
 
-    div a {
-        text-decoration: none;
-    }
-
-    .img-producto-destacado {
-        @extend %cards;
-
-        &:hover {
-            @extend %borde-bg;
-        }
+.card {
+    @extend %cards;
+    &:hover {
+        border: white solid 3px;
     }
 }
 
-.img-producto {
-    @extend %cards;
-
+.card-img-top {
+    height: 300px;
+    width: 300px;
+    opacity: 0.9;
     &:hover {
-        @extend %borde-bg;
+        opacity: 1;
     }
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.card-text {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.boton {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .titulo {
     @extend %titulos;
-    font-size: $text;
+}
+
+.titulo-principal{
+    @extend %titulos;
+    margin-top: -6px;
 }
 
 .all-products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    text-align: center;
-    gap: 40px;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 20px;
+    justify-items: center;
 }
 
 .productos-categorias {
@@ -57,10 +73,6 @@
     gap: 40px;
     grid-template-columns: repeat(4, 1fr);
     display: grid;
-}
-
-.texto-producto {
-    text-decoration: none;
 }
 
 .subtitulo {
@@ -71,9 +83,6 @@
 
 /* medias queries */
 @media screen and (max-width: 1200px) {
-
-
-
     .productos-destacados {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -109,15 +118,17 @@
 
 
 @media screen and (max-width: 768px) {
-    
+
     .productos-destacados {
         display: flex;
         flex-direction: column;
+        justify-items: center;
     }
 
     .all-products {
         display: flex;
         flex-direction: column;
+        justify-items: center;
     }
 
     .productos-categorias {
@@ -125,11 +136,11 @@
         flex-direction: column;
     }
 
-    .navbar-menu-item{
+    .navbar-menu-item {
         font-size: 15px;
     }
 
-    .navbar-menu{
+    .navbar-menu {
         gap: 1rem;
     }
 
