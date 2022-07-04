@@ -66,16 +66,15 @@
     </header>
 
     <main>
-        <video autoplay muted src="./video/video-presentacion.mp4" class="w-100 mb-0">
+        <video autoplay muted playsinline class="w-100">
+            <source src="./video/video-presentacion.mp4" type="video/mp4">
         </video>
-        <!-- solo productos destacados -->
 
-        <section class="mb-5">
-            <h2 class="titulo-principal">Productos Destacados</h2>
-        </section>
+        <!-- solo productos destacados -->
+        <h2 class="titulo-principal mb-5">Productos Destacados</h2>
         <div class="productos-destacados">
             <div class="card">
-                <img src="./img/soldadora.png" class="card-img-top" alt="...">
+                <img src="./img/soldadora.png" class="card-img-top" alt="soldadora">
                 <div class="card-body">
                     <h5 class="card-title">Soldadora Lusqtoff</h5>
                     <p class="card-text">$12899,00</p>
@@ -83,7 +82,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/hidro.png" class="card-img-top" alt="...">
+                <img src="./img/hidro.png" class="card-img-top" alt="Hidrolavadora">
                 <div class="card-body">
                     <h5 class="card-title">Hidrolavadora Lusqtoff</h5>
                     <p class="card-text">$13499,00</p>
@@ -91,7 +90,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/pistola-calor.png" class="card-img-top" alt="...">
+                <img src="./img/pistola-calor.png" class="card-img-top" alt="pistola de calor">
                 <div class="card-body">
                     <h5 class="card-title">Pistola De Calor Lusqtoff</h5>
                     <p class="card-text">$9399,00</p>
@@ -99,7 +98,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/mascara-soldar.png" class="card-img-top" alt="...">
+                <img src="./img/mascara-soldar.png" class="card-img-top" alt="mascara para soldar">
                 <div class="card-body">
                     <h5 class="card-title">Mascara Para Soldar</h5>
                     <p class="card-text">$10899,00</p>
@@ -107,7 +106,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/neumatica.png" class="card-img-top" alt="...">
+                <img src="./img/neumatica.png" class="card-img-top" alt="Engrampadora neumatica">
                 <div class="card-body">
                     <h5 class="card-title">Engrampadora Lusqtoff</h5>
                     <p class="card-text">$10899,00</p>
@@ -117,13 +116,10 @@
         </div>
         <!-- fin de productos destacados -->
 
-        <section class="mt-5">
-            <h2 class="titulo">Herramientas</h2>
-        </section>
-
+        <h2 class="titulo mt-5">Herramientas</h2>
         <div class="all-products mt-5">
             <div class="card">
-                <img src="./img/taladro-percutorlq.png" class="card-img-top" alt="...">
+                <img src="./img/taladro-percutorlq.png" class="card-img-top" alt="taladro con percutor">
                 <div class="card-body">
                     <h5 class="card-title">Taladro Percutor Lusqtoff</h5>
                     <p class="card-text">$17899,00</p>
@@ -131,7 +127,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/taladro.png" class="card-img-top" alt="...">
+                <img src="./img/taladro.png" class="card-img-top" alt="taladro">
                 <div class="card-body">
                     <h5 class="card-title">Taladro Lusqtoff</h5>
                     <p class="card-text">$16899,00</p>
@@ -139,7 +135,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/cargador.png" class="card-img-top" alt="...">
+                <img src="./img/cargador.png" class="card-img-top" alt="bateria de auto">
                 <div class="card-body">
                     <h5 class="card-title">Bateria De Auto Lusqtoff</h5>
                     <p class="card-text">$8599,00</p>
@@ -147,7 +143,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/linterna-bosch.png" class="card-img-top" alt="...">
+                <img src="./img/linterna-bosch.png" class="card-img-top" alt="linterna bosch">
                 <div class="card-body">
                     <h5 class="card-title">Linterna Bosch</h5>
                     <p class="card-text">$11999,00</p>
@@ -155,7 +151,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/fresadora-skill.png" class="card-img-top" alt="...">
+                <img src="./img/fresadora-skill.png" class="card-img-top" alt="fresadora">
                 <div class="card-body">
                     <h5 class="card-title">Fresadora Skill</h5>
                     <p class="card-text">$23499,00</p>
@@ -163,7 +159,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/sierra-skill.png" class="card-img-top" alt="...">
+                <img src="./img/sierra-skill.png" class="card-img-top" alt="sierra angular">
                 <div class="card-body">
                     <h5 class="card-title">Sierra Angular Skill</h5>
                     <p class="card-text">$18799,00</p>
@@ -171,7 +167,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/amoladora-skill.png" class="card-img-top" alt="...">
+                <img src="./img/amoladora-skill.png" class="card-img-top" alt="amoladora angular">
                 <div class="card-body">
                     <h5 class="card-title">Amoladora Angular Skill</h5>
                     <p class="card-text">$19799,00</p>
@@ -179,7 +175,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/carrostanley.png" class="card-img-top" alt="...">
+                <img src="./img/carrostanley.png" class="card-img-top" alt="carro de carga">
                 <div class="card-body">
                     <h5 class="card-title">Carro De Carga Stanley</h5>
                     <p class="card-text">$16899,00</p>
@@ -187,7 +183,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/caladora-bosch.png" class="card-img-top" alt="...">
+                <img src="./img/caladora-bosch.png" class="card-img-top" alt="caladora">
                 <div class="card-body">
                     <h5 class="card-title">Caladora Bosch</h5>
                     <p class="card-text">$19899,00</p>
@@ -195,7 +191,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/motosierra.png" class="card-img-top" alt="...">
+                <img src="./img/motosierra.png" class="card-img-top" alt="motosierra">
                 <div class="card-body">
                     <h5 class="card-title">Motosierra Black & Decker</h5>
                     <p class="card-text">$23799,00</p>
@@ -203,7 +199,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/mascara-soldar.png" class="card-img-top" alt="...">
+                <img src="./img/mascara-soldar.png" class="card-img-top" alt="mascara para soldar">
                 <div class="card-body">
                     <h5 class="card-title">Mascara Para Soldar</h5>
                     <p class="card-text">$10899,00</p>
@@ -211,7 +207,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/lijadora-orbital.png" class="card-img-top" alt="...">
+                <img src="./img/lijadora-orbital.png" class="card-img-top" alt="lijadora orbital">
                 <div class="card-body">
                     <h5 class="card-title">Lijadora Orbital Bosch</h5>
                     <p class="card-text">$26799,00</p>
@@ -219,7 +215,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/atornillador-inalambrico.png" class="card-img-top" alt="...">
+                <img src="./img/atornillador-inalambrico.png" class="card-img-top" alt="atornilladora">
                 <div class="card-body">
                     <h5 class="card-title">Atornillador Bosch</h5>
                     <p class="card-text">$22399,00</p>
@@ -227,7 +223,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/sierra-circular.png" class="card-img-top" alt="...">
+                <img src="./img/sierra-circular.png" class="card-img-top" alt="sierra">
                 <div class="card-body">
                     <h5 class="card-title">Sierra lusqtoff</h5>
                     <p class="card-text">$21699,00</p>
@@ -235,24 +231,22 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img/soldadora-inverter.png" class="card-img-top" alt="...">
+                <img src="./img/soldadora-inverter.png" class="card-img-top" alt="soldadora">
                 <div class="card-body">
                     <h5 class="card-title">Soldadora Inverter</h5>
                     <p class="card-text">$32699,00</p>
                     <a href="#" class="boton btn btn-dark">Agregar Al Carrito</a>
                 </div>
             </div>
-            <div>
-                <div class="card">
-                    <img src="./img/caja-herramientas.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Caja De Herramientas</h5>
-                        <p class="card-text">$38699,00</p>
-                        <a href="#" class="boton btn btn-dark">Agregar Al Carrito</a>
-                    </div>
+            <div class="card">
+                <img src="./img/caja-herramientas.png" class="card-img-top" alt="caja de herramientas">
+                <div class="card-body">
+                    <h5 class="card-title">Caja De Herramientas</h5>
+                    <p class="card-text">$38699,00</p>
+                    <a href="#" class="boton btn btn-dark">Agregar Al Carrito</a>
                 </div>
-                <div>
-                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer-container mt-5">

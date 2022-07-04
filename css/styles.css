@@ -14,6 +14,13 @@
   color: black;
   background-color: #FF8E00; }
 
+.all-products, .productos-categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  text-align: center;
+  justify-items: center;
+  gap: 30px; }
+
 /* bases */
 * {
   padding: 0;
@@ -21,6 +28,31 @@
   box-sizing: border-box; }
 
 /* layout */
+.card:hover {
+  border: white solid 3px; }
+
+.card-img-top {
+  height: 300px;
+  width: 300px;
+  opacity: 0.9; }
+  .card-img-top:hover {
+    opacity: 1; }
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: black; }
+
+.card-text {
+  font-family: 'roboto', sans-serif;
+  font-size: 1.5rem; }
+
+.boton {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center; }
+
 .logo {
   width: 130px;
   height: 130px; }
@@ -55,7 +87,7 @@
         margin-right: 8px; }
 
 .creditos {
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #d3d3d3;
   margin-top: 40px; }
@@ -81,11 +113,11 @@
     text-align: center; }
   .texto .parrafo-nosotros {
     font-family: 'roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
     width: 70%; }
   .texto .valores {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-top: 30px;
     text-align: center;
     list-style-type: none;
@@ -159,48 +191,12 @@
 
 /* selectores generales */
 .productos-destacados {
-  display: flex;
-  justify-content: space-around; }
-
-.card:hover {
-  border: white solid 3px; }
-
-.card-img-top {
-  height: 300px;
-  width: 300px;
-  opacity: 0.9; }
-  .card-img-top:hover {
-    opacity: 1; }
-
-.card-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4rem;
-  color: black; }
-
-.card-text {
-  font-family: 'roboto', sans-serif;
-  font-size: 1.5rem; }
-
-.boton {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  justify-content: center; }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center; }
 
 .titulo-principal {
   margin-top: -6px; }
-
-.all-products {
-  display: grid;
-  grid-template-columns: repeat(4, 2fr);
-  gap: 20px;
-  justify-items: center; }
-
-.productos-categorias {
-  text-align: center;
-  gap: 40px;
-  grid-template-columns: repeat(4, 1fr);
-  display: grid; }
 
 .subtitulo {
   text-align: center; }
@@ -231,22 +227,22 @@
 
 @media screen and (max-width: 768px) {
   .productos-destacados {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-items: center; }
+  .titulo {
+    font-size: 1.5rem; }
+  .titulo-principal {
+    font-size: 1.5rem; }
   .all-products {
-    display: flex;
-    flex-direction: column;
-    justify-items: center; }
+    display: grid;
+    grid-template-columns: 1fr; }
   .productos-categorias {
-    display: flex;
-    flex-direction: column; }
-  .navbar-menu-item {
-    font-size: 15px; }
-  .navbar-menu {
-    gap: 1rem; }
-  .titulo .h2 {
-    font-size: 5px; }
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; }
+  .nav-link {
+    font-size: 1.2rem; }
   .banner-nosotros {
     display: flex;
     flex-direction: column;
@@ -256,6 +252,8 @@
   .img-nosotros {
     width: 70vw;
     height: 50vw; }
+  .creditos {
+    font-size: 1rem; }
   .pie {
     display: flex;
     justify-content: space-around; }
@@ -264,6 +262,8 @@
     font-size: 15px; }
   .contact-wrapper {
     grid-template-columns: 1fr; }
+  .contact-form {
+    font-size: 10px; }
   .content {
     padding: 0;
     width: 100%; } }

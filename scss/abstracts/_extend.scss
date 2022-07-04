@@ -14,3 +14,11 @@
     color: black;
     background-color: $bg-titulos;
 }
+
+%position-objects{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    text-align: center;
+    justify-items: center;
+    gap: 30px;
+}
