@@ -1,0 +1,35 @@
+.card {
+    @extend %cards;
+
+    &:hover {
+        border: white solid 3px;
+    }
+}
+
+.card-img-top {
+    height: 300px;
+    width: 300px;
+    opacity: 0.9;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.card-text {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.boton {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
